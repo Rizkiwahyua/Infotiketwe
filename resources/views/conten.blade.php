@@ -8,10 +8,9 @@
             <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"
                 aria-label="Slide 3"></button>
         </div>
-        <div class="carousel-inner" style="width: 100%; height: 80vh">
+        <div class="carousel-inner">
             <div class="carousel-item active">
-                <img src="{{ asset('asset/img/movie1.jpg') }}" class="d-block w-100 img-fluid" alt="..."
-                    style="max-width: 100%;">
+                <img src="{{ asset('asset/img/event1.jpg') }}" class="d-block w-100 img-fluid" alt="...">
                 <div class="carousel-caption d-none d-md-block">
                     <h5>First slide label</h5>
                     <p>Some representative placeholder content for the first slide.</p>
@@ -20,12 +19,12 @@
             <div class="carousel-item">
                 <img src="{{ asset('asset/img/event1.jpg') }}" class="d-block w-100 img-fluid" alt="...">
                 <div class="carousel-caption d-none d-md-block">
-                    <h5>Third slide label</h5>
-                    <p>Some representative placeholder content for the third slide.</p>
+                    <h5>Second slide label</h5>
+                    <p>Some representative placeholder content for the second slide.</p>
                 </div>
             </div>
             <div class="carousel-item">
-                <img src="{{ asset('asset/img/konser1.jpg') }}" class="d-block w-100 img-fluid" alt="...">
+                <img src="{{ asset('asset/img/karnaval.jpg') }}" class="d-block w-100 img-fluid" alt="...">
                 <div class="carousel-caption d-none d-md-block">
                     <h5>Third slide label</h5>
                     <p>Some representative placeholder content for the third slide.</p>
@@ -47,42 +46,140 @@
 
 
 
-<!-- mulai main2 -->
-<div class="container mt-4">
-    <div class="row text-center">
-        <div class="col">
-            <h1>Event Terbaik</h1>
-        </div>
-    </div>
-    <div class="row text-center">
-        <div class="col">
-            <div class="d-flex">
-                <div class="card" style="width: 18rem;">
-                    <img src="{{ asset('asset/img/efe.jpg') }}" class="card-img-top" alt="...">
 
-                    <button type="button" class="btn btn-secondary">Buy</button>
+<div class="album py-5 bg-body-tertiary">
+    <div class="container">
+
+        <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
+            <div class="col">
+                <div class="card shadow-sm">
+                    <img class="card-img-top" src="{{ URL::to('asset/img/event.jpg') }}" alt="" width="100%"
+                        height="100%">
+                    <div class="card-body">
+                        <h5>NAMA MENU</h5>
+                        <p class="card-text">This is a wider card with supporting text below as a natural lead-in to
+                            additional content. This content is a little bit longer.</p>
+                        <div class="d-flex justify-content-center align-items-center">
+                            <div class="btn-group">
+                                <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
+                                
+                            </div>
+                            <small class="text-body-secondary"></small>
+                        </div>
+                    </div>
                 </div>
-                <div class="card ms-4" style="width: 18rem;">
-                    <img src="{{ asset('asset/img/efe.jpg') }}" class="card-img-top" alt="...">
-
-                    <button type="button" class="btn btn-secondary">Buy</button>
-                </div>
-                <div class="card ms-4" style="width: 18rem;">
-                    <img src="{{ asset('asset/img/efe.jpg') }}" class="card-img-top" alt="...">
-
-                    <button type="button" class="btn btn-secondary">Buy</button>
-                </div>
-                <div class="card ms-4" style="width: 18rem;">
-                    <img src="{{ asset('asset/img/efe.jpg') }}" class="card-img-top" alt="...">
-
-                    <button type="button" class="btn btn-secondary">Buy</button>
-                </div>
-
             </div>
+            <div class="col">
+                <div class="card shadow-sm">
+                    <img class="card-img-top" src="{{ URL::to('asset/img/konser.jpg') }}" alt="" width="100%"
+                        height="100%">
+                    <div class="card-body">
+                        <h5>NAMA MENU</h5>
+                        <p class="card-text">This is a wider card with supporting text below as a natural lead-in to
+                            additional content. This content is a little bit longer.</p>
+                        <div class="d-flex justify-content-center align-items-center">
+                            <div class="btn-group">
+                                <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
+                                
+                            </div>
+                            <small class="text-body-secondary"></small>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card shadow-sm">
+                    <img class="card-img-top" src="{{ URL::to('asset/img/movie.jpg') }}" alt="" width="100%"
+                        height="100%">
+                    <div class="card-body">
+                        <h5>NAMA MENU</h5>
+                        <p class="card-text">This is a wider card with supporting text below as a natural lead-in to
+                            additional content. This content is a little bit longer.</p>
+                        <div class="d-flex justify-content-center align-items-center">
+                            <div class="btn-group">
+                                <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
+                                
+                            </div>
+                            <small class="text-body-secondary"></small>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col">
+                <div class="card shadow-sm">
+                    <img class="card-img-top" src="{{ URL::to('asset/img/pantai.jpg') }}" alt="" width="100%"
+                        height="100%">
+                    <div class="card-body">
+                        <h5>NAMA MENU</h5>
+                        <p class="card-text">This is a wider card with supporting text below as a natural lead-in to
+                            additional content. This content is a little bit longer.</p>
+                        <div class="d-flex justify-content-center align-items-center">
+                            <div class="btn-group">
+                                <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
+                                
+                            </div>
+                            <small class="text-body-secondary"></small>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card shadow-sm">
+                    <img class="card-img-top" src="{{ URL::to('asset/img/film.jpg') }}" alt="" width="100%"
+                        height="100%";>
+                    <div class="card-body">
+                        <h5>NAMA MENU</h5>
+                        <p class="card-text">This is a wider card with supporting text below as a natural lead-in to
+                            additional content. This content is a little bit longer.</p>
+                        <div class="d-flex justify-content-center align-items-center">
+                            
+                                
+                                <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
+                                
+                            
+                            <small class="text-body-secondary"></small>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card shadow-sm">
+                    <img class="card-img-top" src="{{ URL::to('asset/img/pantai2.jpg') }}" alt="" width="100%"
+                        height="100%">
+                    <div class="card-body">
+                        <h5>NAMA MENU</h5>
+                        <p class="card-text">This is a wider card with supporting text below as a natural lead-in to
+                            additional content. This content is a little bit longer.</p>
+                        <div class="d-flex justify-content-center align-items-center">
+                            <div class="btn-group">
+                                <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
+                                
+                            </div>
+                            <small class="text-body-secondary"></small>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
         </div>
     </div>
 </div>
-</div>
+
+<style>
+    .col img{
+    width: 100%;
+    cursor: pointer;
+    transition: 1s;
+}
+
+.col:hover img{
+    transform: scale(1.1);
+}
+
+
+</style>
 
 {{-- <div class="container mt-5">
     <h1 class="col-12">Event terbaik</h1>
@@ -118,34 +215,10 @@
 <!-- start main 3 -->
 
 
+
 <!-- card -->
 
-<div class="container mt-4">
-    <h1 class="col-12">Event terbaru </h1>
-    <div class="d-flex">
-        <div class="card" style="width: 18rem;">
-            <img src="{{ asset('asset/img/efe.jpg') }}" class="card-img-top" alt="...">
 
-            <button type="button" class="btn btn-secondary">Buy</button>
-        </div>
-        <div class="card ms-4" style="width: 18rem;">
-            <img src="{{ asset('asset/img/efe.jpg') }}" class="card-img-top" alt="...">
-
-            <button type="button" class="btn btn-secondary">Buy</button>
-        </div>
-        <div class="card ms-4" style="width: 18rem;">
-            <img src="{{ asset('asset/img/efe.jpg') }}" class="card-img-top" alt="...">
-
-            <button type="button" class="btn btn-secondary">Buy</button>
-        </div>
-        <div class="card ms-4" style="width: 18rem;">
-            <img src="{{ asset('asset/img/efe.jpg') }}" class="card-img-top" alt="...">
-
-            <button type="button" class="btn btn-secondary">Buy</button>
-        </div>
-
-    </div>
-</div>
 <!-- end card -->
 </div>
 <!-- end main 3 -->
