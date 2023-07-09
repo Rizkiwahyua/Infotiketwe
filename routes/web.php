@@ -56,3 +56,36 @@ Route::get('/ibu/{id}', [App\Http\Controllers\IbuController::class, 'show1'])->n
 Route::get('dataibu/edit/{id}', [App\Http\Controllers\IbuController::class, 'edit1'])->name('ibu.edit');
 Route::put('dataibu/{id}', [App\Http\Controllers\IbuController::class, 'update1'])->name('ibu.update');
 Route::delete('dataibu/{id}', [App\Http\Controllers\IbuController::class, 'destroy1'])->name('ibu.destroy');
+
+
+Route::post('/tambah-data-movie', [App\Http\Controllers\MovieController::class, 'store'])->name('movie.store');
+Route::get('/data-movie', [App\Http\Controllers\MovieController::class, 'dataMovie'])->name('data-movie');
+Route::get('/movie/{id}', [App\Http\Controllers\MovieController::class, 'show'])->name('movie.show');
+Route::get('/data-movie/edit/{id}', [App\Http\Controllers\MovieController::class, 'edit'])->name('movie.edit');
+Route::put('/data-movie/{id}', [App\Http\Controllers\MovieController::class, 'update'])->name('movie.update');
+Route::delete('/data-movie/{id}', [App\Http\Controllers\MovieController::class, 'destroy'])->name('movie.destroy');
+
+
+Route::post('/tambah-data-event', [App\Http\Controllers\EventController::class, 'store'])->name('event.store');
+Route::get('/data-event', [App\Http\Controllers\EventController::class, 'dataEvent'])->name('data-event');
+Route::get('/event/{id}', [App\Http\Controllers\EventController::class, 'show'])->name('event.show');
+Route::get('/data-event/edit/{id}', [App\Http\Controllers\EventController::class, 'edit'])->name('event.edit');
+Route::put('/data-event/{id}', [App\Http\Controllers\EventController::class, 'update'])->name('event.update');
+Route::delete('/data-event/{id}', [App\Http\Controllers\EventController::class, 'destroy'])->name('event.destroy');
+
+
+
+use App\Http\Controllers\ConcertController;
+Route::post('/tambah-data-konser', [ConcertController::class, 'store'])->name('concert.store');
+Route::get('/data-konser', [ConcertController::class, 'datakonser'])->name('concert.index');
+Route::get('/konser/{id}', [ConcertController::class, 'show'])->name('concert.show');
+Route::get('/data-konser/edit/{id}', [ConcertController::class, 'edit'])->name('concert.edit');
+Route::put('/data-konser/{id}', [ConcertController::class, 'update'])->name('concert.update');
+Route::delete('/data-konser/{id}', [ConcertController::class, 'destroy'])->name('concert.destroy');
+
+
+
+
+
+
+

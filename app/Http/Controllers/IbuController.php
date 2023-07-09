@@ -58,9 +58,9 @@ class IbuController extends Controller
     public function update1(Request $request, $id)
     {
         $ibu = ibu::findOrFail($id);
-        $ibu->nama = $request->input('nama_acara');
-        $ibu->tempat_lahir = $request->input('tanggal');
-        $ibu->alamat = $request->input('lokasi');
+        $ibu->nama_acara = $request->input('nama_acara');
+        $ibu->tanggal = $request->input('tanggal');
+        $ibu->lokasi = $request->input('lokasi');
         $ibu->status = $request->input('status');
         $ibu->no_hp = $request->input('no_hp');
         $ibu->keterangan = $request->input('keterangan');
@@ -69,6 +69,7 @@ class IbuController extends Controller
 
         return redirect()->back()->with('success', 'Data anak berhasil disimpan.');
     }
+
     public function destroy1($id)
     {
         $ibu = ibu::findOrFail($id);

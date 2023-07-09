@@ -35,7 +35,8 @@
                     <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#ModalDataIbu">Tambah
                         Data</button>
                 </div>
-                
+ 
+                <!-- ModalEdit-->
                 @foreach ($ibus as $ibu)
                     <div class="modal fade" id="ModalEdit{{ $ibu->id }}" tabindex="-1"
                         aria-labelledby="ModalEdit{{ $ibu->id }}Label" aria-hidden="true">
@@ -100,7 +101,7 @@
                             <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
                                 <div class="col">
                                     <div class="card shadow-sm">
-                                        <img class="card-img-top" src="{{ URL::to('asset/img/pantai2.jpg' . $ibu->gambar) }}"
+                                        <img class="card-img-top" src="{{ URL::to('asset/img/run.jpg' . $ibu->gambar) }}"
                                             alt="" width="100%" height="100%">
                                         <div class="card-body">
                                             <h5>{{ $ibu->nama_acara }}</h5>
@@ -129,6 +130,7 @@
                             </div>
                         </div>
                     </div>
+                    
                     <!-- ModalView-->
                     <div class="modal fade" id="ModalView{{ $ibu->id }}" tabindex="-1"
                         aria-labelledby="ModalView{{ $ibu->id }}Label" aria-hidden="true">
