@@ -138,7 +138,7 @@
                     <img class="card-img-top" src="{{ URL::to('asset/img/pantai.jpg') }}" alt="" width="100%"
                         height="100%">
                     <div class="card-body">
-                        <h5>NAMA MENU</h5>
+                        <h5>Pantai</h5>
                         <p class="card-text">This is a wider card with supporting text below as a natural lead-in to
                             additional content. This content is a little bit longer.</p>
                         <div class="d-flex justify-content-center align-items-center">
@@ -156,7 +156,7 @@
                     <img class="card-img-top" src="{{ URL::to('asset/img/film.jpg') }}" alt="" width="100%"
                         height="100%";>
                     <div class="card-body">
-                        <h5>NAMA MENU</h5>
+                        <h5>Bioskop</h5>
                         <p class="card-text">This is a wider card with supporting text below as a natural lead-in to
                             additional content. This content is a little bit longer.</p>
                         <div class="d-flex justify-content-center align-items-center">
@@ -175,7 +175,7 @@
                     <img class="card-img-top" src="{{ URL::to('asset/img/pantai2.jpg') }}" alt="" width="100%"
                         height="100%">
                     <div class="card-body">
-                        <h5>NAMA MENU</h5>
+                        <h5>Sungai</h5>
                         <p class="card-text">This is a wider card with supporting text below as a natural lead-in to
                             additional content. This content is a little bit longer.</p>
                         <div class="d-flex justify-content-center align-items-center">
